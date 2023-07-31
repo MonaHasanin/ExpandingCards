@@ -114,6 +114,10 @@ a:hover, a:active {
     color: #eee;
 }
 
+    h2{
+        color: dfdfdf;
+    }
+
 
   ul li {
     display: inline-block;
