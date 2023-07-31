@@ -66,6 +66,8 @@ footer {
     bottom: 20px;
     left: 20px;
     opacity:0;
+     text-shadow: 1%;
+
 }
 
 .panel.active{
