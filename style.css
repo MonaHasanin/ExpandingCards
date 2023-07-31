@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+    html , body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #110e0e78;
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+footer {
+    align-items: center;
+    float:none;
+    justify-content: center;
+    background-color: #110e0e78;
+    margin-top: 500px;
+    padding: 1%;
+    border-bottom: 1px solid #9f9f9f;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 27px;
+}
+#Mona {
+    align-items: center;
+    position: center;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    z-index: 100;
+    height: 20px;
+    padding-bottom: 2%;
+}
+.container {
+    padding-top: 4%;
+
+    display: flex;
+    width: auto;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    flex: 0.5;
+    position: relative;
+    transition: flex 0.5 ease-in;
+    color: palegoldenrod;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.panel h3{
+    position: center;
+    font-size: 23px;
+    bottom: 20px;
+    left: 20px;
+    opacity:0;
+}
+
+.panel.active{
+    flex: 5;
+
+}
+
+.panel.active h3{
+    opacity:1;
+}
+
+@media(max-width:400px){
+    .container{
+        width: 100px;
+
+}
+
+.panel:nth-of-type(4),.panel:nth-of-type(5){
+    display: none;
+}
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    float:inline-end;
+    justify-content: center;
+    background-color: #110e0e78;
+    list-style-type: none;
+    border-bottom: 1px solid #9f9f9f;
+    display: flex;
+    justify-content: space-between; 
+ }
+li:hover {
+    background-color: #dfdfdf;
+    transition-duration: 0.2s;
+}
+a:visited {
+    color: lightgray;
+}
+
+a:hover, a:active {
+    color: #eee;
+}
+
+
+  ul li {
+    display: inline-block;
+    padding-left: 20px;
+  }
+
+  form-control {
+    width: 100px;
+  }
+
+   
